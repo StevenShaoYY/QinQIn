@@ -140,11 +140,7 @@ a:hover, a:active {
     border-radius: 4px;
     box-shadow: 1px 1px 0 #f7f7f7;
     margin-bottom: 8px;
-    -webkit-transition: border-color .5s ease;
-    transition: border-color .5s ease;
-    -webkit-transition: border-color .5s ease 180ms ease-in-out 0s;
-    -o-transition: border-color .5s ease 180ms ease-in-out 0s;
-    transition: border-color .5s ease 180ms ease-in-out 0s;
+
 
     padding-top: 16px;
     padding-bottom: 15px;
@@ -353,6 +349,8 @@ a:hover, a:active {
     font-size: 17px;
     font-weight: 600;
 }
+
+/*star 插件*/
 .star_unselect{
     cursor: pointer;
     font-family:"iconfont" !important;
@@ -383,9 +381,60 @@ a:hover, a:active {
 .start ul li + li{
     margin-left: 3px;
 }
+
+
+
 .text_indent_two{
     text-indent:2em;
 }
+
+.page_bar{
+    height: 130px;
+
+}
+/*分页插件*/
+.pagination_page_list li{
+    float: left;
+}
+.pagination_page_list li + li{
+    margin-left: 5px;
+}
+.pagination_page_list li a,.pagination_page_list li span{
+    cursor: pointer;
+    display: inline-block;
+
+    border: 1px solid gainsboro;
+    padding:10px 15px;
+    color: #0e7bef;
+    border-radius: 4px;
+    border-radius: 3px;
+}
+.pagination_page_list li a{
+   color: #0e7bef;
+    text-decoration: none;
+}
+
+.pagination_page_list .active{
+    background-color: #00aaee;
+    color: #fff;
+}
+.pagination_page_list .active{
+    background-color: #00aaee;
+}
+.pagination_page_list li:hover{
+    background-color: #00aaee;
+}
+.pagination_page_list a:hover ,.pagination_page_list span:hover{
+   background-color: #00aaee;
+    color: #fff;
+}
+
+/*.pagination_page_list li:first-child{*/
+ /*padding: 10px 15px;*/
+ /*}*/
+/*.pagination_page_list li:last-child{*/
+    /*padding: 10px 15px;*/
+/*}*/
 
 
 @media only screen and (min-width: 600px){

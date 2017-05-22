@@ -25,7 +25,7 @@
                 </div>
                 <div class="table_cell_wrapper">
                     <div class="user_bar">
-                        <img src="img/user2.png" class="user_icon" alt="">
+                        <img src="img/user2.png" id="showLogDialog" class="user_icon pointer" alt="">
                         <!--<div class="user_icon"></div>-->
                     </div>
                 </div>
@@ -216,6 +216,10 @@
             </div>
         </div>
     </div>
+    <div class="page_bar">
+        <div class="pagination" id="pagination"></div>
+    </div>
+
 </div>
 <div class="modal" id="addQuesModal">
     <div class="modal_overlay" id="ask_question">
@@ -237,6 +241,29 @@
     </div>
 </div>
 
+
+<div class="modal" id="userLogin">
+    <div class="modal_overlay" id="ask_question">
+        <div class="modal_wrapper">
+            <div class="model_header">
+                <div><h2>用户登录</h2></div>
+                <div><span class="closs_icon " id="closeLogDialog">&#xe641;</span></div>
+            </div>
+            <div class="model_content">
+                <label for="question_main">用户名：</label>
+                <input class="question" type="text" placeholder="请输入用户名">
+                <label for="question_main">密码：</label>
+                <input class="question" type="password" placeholder="请输入密码">
+            </div>
+            <div class="model_footer">
+                <a class="btn_cancel" href="" id="closeLogDialog2">取消</a>
+                <button class="btn_save">登录</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="js/pagnation.js"></script>
 <script type="text/javascript" src="js/index.js"></script>
 </body>
 </html>
